@@ -26,6 +26,10 @@ class ClienteResource extends Resource
                 Forms\Components\TextInput::make('nombre')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('telefono')
+                    ->tel()
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
