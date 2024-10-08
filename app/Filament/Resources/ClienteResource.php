@@ -39,6 +39,8 @@ class ClienteResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nombre')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('telefono')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
