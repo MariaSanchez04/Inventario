@@ -64,7 +64,7 @@ class CompraResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\DeleteAction::make(),
 
             ]);
             // ->bulkActions([
