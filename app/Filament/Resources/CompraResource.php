@@ -61,6 +61,8 @@ class CompraResource extends Resource
             ])
             ->filters([
                 //
+                Tables\Filters\TrashedFilter::make(), // Agrega este filtro
+
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

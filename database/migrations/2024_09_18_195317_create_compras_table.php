@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer('stock');
             $table->foreignId('id_producto')->constrained('productos')->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreignId('id_proveedor')->constrained('proveedors')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
