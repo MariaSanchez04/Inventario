@@ -5,10 +5,11 @@ namespace App\Policies;
 use App\Models\User;
 use App\Models\Compra;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CompraPolicy
 {
-    use HandlesAuthorization;
+    use HandlesAuthorization, SoftDeletes;
 
     /**
      * Determine whether the user can view any models.
